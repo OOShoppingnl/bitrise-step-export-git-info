@@ -1,0 +1,36 @@
+title: Export git information
+summary: Exports git information from current checkout
+description: Exports git information from current checkout
+published_at: 2019-10-29T10:35:20.751143473Z
+website: https://hatsa.com
+source:
+  git: https://github.com/OOShoppingnl/bitrise-step-export-git-info.git
+  commit: edfe20af6f02454977723396e9f6a98889462db8
+host_os_tags:
+- osx-10.11
+type_tags:
+- artifact-info
+toolkit:
+  bash:
+    entry_file: step.sh
+deps:
+  brew:
+  - name: git
+  apt_get:
+  - name: git
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: false
+outputs:
+- GIT_HASH: null
+  opts:
+    summary: Latest short git hash
+    title: Latest short git hash
+- GIT_DATE: null
+  opts:
+    summary: Date of latest git commit
+    title: Date of latest git commit
+- SYS_DATE: null
+  opts:
+    summary: d-m-Y H:i:s string of system time
+    title: d-m-Y H:i:s string of system time
