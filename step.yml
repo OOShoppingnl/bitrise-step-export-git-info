@@ -26,10 +26,6 @@ outputs:
   opts:
     summary: Latest short git hash
     title: Latest short git hash
-- GIT_DATE: null
-  opts:
-    summary: Date of latest git commit
-    title: Date of latest git commit
 - SYS_DATE: null
   opts:
     summary: d-m-Y H:i:s string of system time
